@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400,700&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+.header {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to bottom, #ff2600, #7c2bff);
+  color: #FFF;
+  text-align: center;
+}
+
+.navbar {
+  margin-bottom: 20px;
+}
+
+.nav-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-item {
+  margin: 0 10px;
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: #FFF;
+}
+
+.title {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.subtitle {
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #FFF;
+  color: #FF6A00;
+  font-size: 20px;
+  text-decoration: none;
+  border-radius: 30px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #FFDD00;
+}
+
+.section {
+  padding: 80px 0;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 36px;
+  margin-bottom: 60px;
+}
+
+.project-item {
+    width: 300px;
+    padding: 20px;
+    margin: 0 20px;
+    background-color: #FFF;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .project-item:hover {
+    transform: translateY(-10px);
+  }
+
+  .project-item.expanded {
+    transform: scale(1.2);
+    z-index: 1;
+  }
+
+  .project-item.expanded .project-overlay {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  
+  .project-image {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .project-details {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+  }
+  
+  .project-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .project-description {
+    font-size: 16px;
+    color: #777;
+  }
+
+  .project-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+  }
+  
+  .expand-button {
+    padding: 10px 20px;
+    background-color: #FF6A00;
+    color: #FFF;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .expanded {
+    height: auto !important;
+  }
+
+  .expanded-content {
+    max-width: 800px;
+    width: 90;
+  }
+  
+  .expanded .project-description {
+    max-height: none;
+    overflow: visible;
+  }
+  
+  
+  
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #FFF;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-form input,
+  .contact-form textarea,
+  .contact-form button {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 4px;
+  }
+  
+  .contact-form input[type="text"],
+  .contact-form input[type="email"],
+  .contact-form textarea {
+    width: 100%;
+  }
+  
+  .contact-form textarea {
+    height: 120px;
+  }
+  
+  .contact-form button {
+    background-color: #FF6A00;
+    color: #FFF;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .contact-form button:hover {
+    background-color: #FFDD00;
+  }
+  .footer {
+    background-color: #333;
+    color: #FFF;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .footer p {
+    margin: 0;
+  }
+ 
+  

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Page</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header class="header">
+    <nav class="navbar">
+      <ul class="nav-list">
+        <li class="nav-item"><a href="#home">Home</a></li>
+        <li class="nav-item"><a href="#about">About</a></li>
+        <li class="nav-item"><a href="#projects">Projects</a></li>
+        <li class="nav-item"><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <h1 class="title">Welcome to our Landing Page</h1>
+    <p class="subtitle">Experience the Magic</p>
+    <a href="#about" class="btn">Learn More</a>
+  </header>
+
+  <section id="about" class="section">
+    <h2 class="section-title">About Me</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ut placerat nisl. Sed at lacus auctor, finibus nisl vel, vulputate lectus. Nunc volutpat nisl id lorem cursus dictum.</p>
+  </section>
+
+  <section id="projects" class="section">
+    <h2 class="section-title">Projects</h2>
+    <div class="projects-list">
+      <div class="project-item">
+        <div class="project-content">
+          <div class="project-image">
+            <img src="project1.png" alt="Project 1">
+          </div>
+          <div class="project-details">
+            <h3 class="project-title">Project 1</h3>
+            <p class="project-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ut placerat nisl.</p>
+          </div>
+        </div>
+        <button class="expand-button">Expand</button>
+        <div class="project-overlay">
+          <div class="expanded-content">
+            <div class="expanded-image">
+              <img src="project1.png" alt="Project 1">
+            </div>
+            <div class="expanded-details">
+              <h3 class="expanded-title">Project 1</h3>
+              <p class="expanded-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ut placerat nisl. Sed at lacus auctor, finibus nisl vel, vulputate lectus. Nunc volutpat nisl id lorem cursus dictum.</p>
+              <button class="close-button">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="project-item">
+        <div class="project-content">
+          <div class="project-image">
+            <img src="project2.png" alt="Project 2">
+          </div>
+          <div class="project-details">
+            <h3 class="project-title">Project 2</h3>
+            <p class="project-description">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+        </div>
+        <button class="expand-button">Expand</button>
+        <div class="project-overlay">
+          <div class="expanded-content">
+            <div class="expanded-image">
+              <img src="project2.png" alt="Project 2">
+            </div>
+            <div class="expanded-details">
+              <h3 class="expanded-title">Project 2</h3>
+              <p class="expanded-description">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+              <button class="close-button">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="project-item">
+        <div class="project-content">
+          <div class="project-image">
+            <img src="/images/project3.jpg" alt="Project 3">
+          </div>
+          <div class="project-details">
+            <h3 class="project-title">Project 3</h3>
+            <p class="project-description">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+          </div>
+        </div>
+        <button class="expand-button">Expand</button>
+        <div class="project-overlay">
+          <div class="expanded-content">
+            <div class="expanded-image">
+              <img src="/images/project3.jpg" alt="Project 3">
+            </div>
+            <div class="expanded-details">
+              <h3 class="expanded-title">Project 3</h3>
+              <p class="expanded-description">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+              <button class="close-button">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  
+  
+  
+  
+  
+  
+  
+
+  <section id="contact" class="section">
+    <h2 class="section-title">Contact Me</h2>
+    <form class="contact-form">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2023 Landing Page. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
